@@ -5,7 +5,7 @@ import os
 os.remove('yandex-pars.csv') #удаляем, т.к. при каждом запуске программы файл дозаписывается
 
 for i  in range(1, 6):
-    with open(r"C:\Users\ogure\source\repos\leaders\yandex" + str(i) +".json", "r", encoding="utf-8") as file:
+    with open(r"C:\Users\ogure\source\repos\leaders\jsonchik" + str(i) +".json", "r", encoding="utf-8") as file:
         data = json.load(file)
 
     offers = data['map']['offers']['points']
